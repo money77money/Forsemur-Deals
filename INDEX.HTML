@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>77 WORK</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+
+<body>
+    <header class="site-header">
+        <nav class="lang">
+            <button id="lang-ru" class="active">RU</button>
+            <button id="lang-en">EN</button>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h1 class="title">Гарант сделок • Низкая комиссия • Безопасные сделки</h1>
+            <p class="meta">800+ успешных сделок</p>
+            <p class="fee">3% комиссия за сделку</p>
+        </section>
+
+        <section class="info">
+            <h2>Информация</h2>
+            <p>Контакты и сообщества</p>
+
+            <ul class="contacts">
+                <li><a href="https://t.me/actavice" target="_blank" rel="noopener">Личные сообщения — Связь для
+                        оформление сделок t.me/actavice</a></li>
+                <li><a href="https://t.me/77" target="_blank" rel="noopener">Новостной канал — t.me/77</a></li>
+                <li><a href="https://t.me/77" target="_blank" rel="noopener">Чат & Маркет — t.me/77</a></li>
+            </ul>
+        </section>
+
+        <section class="how">
+            <h2>Как проходит сделка</h2>
+
+            <ol class="steps">
+                <li>
+                    <div class="step-num">1</div>
+                    <div class="step-body">
+                        <h3>Передача реквизитов</h3>
+                        <p>ПРОДАВЕЦ даёт свои реквизиты ПОКУПАТЕЛЮ.</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="step-num">2</div>
+                    <div class="step-body">
+                        <h3>Передача подарка гаранту</h3>
+                        <p>После этого ПРОДАВЕЦ передаёт мне NFT-подарок. Я отправляю скрин, что получил его. Продавец
+                            тоже фиксирует у себя (скрин/видео).</p>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="step-num">3</div>
+                    <div class="step-body">
+                        <h3>Оплата и выдача</h3>
+                        <p>ПОКУПАТЕЛЬ переводит деньги ПРОДАВЦУ по реквизитам, и только после этого сам покупатель
+                            получает NFT-подарок себе.</p>
+                    </div>
+                </li>
+            </ol>
+        </section>
+
+        <section class="examples">
+            <h2>Примеры реквизитов</h2>
+            <p>Пример, как оставлять реквизиты:</p>
+            <ul>
+                <li>Номер телефона/карты</li>
+                <li>ФИО</li>
+                <li>Банк</li>
+            </ul>
+
+            <p>Пример, как оставлять адрес крипты:</p>
+            <pre class="code">TON — UQCVp3p9SoW1MbADPJRg1_FYfW22NlugkP-tuy5vvI7l09eB</pre>
+
+            <p>Комментарий к переводу: Покупателю желательно оставлять комментарий к переводу: «отдал долг» (или
+                похожий), чтобы банк не задержал/не заблокировал платёж.</p>
+
+            <h3>Сделка на звёзды</h3>
+            <p>Если сделка на телеграм-звёзды — продавцу обязательно указать юзернейм аккаунта, на который присылать
+                звёзды.</p>
+
+            <p class="note">Проверяй юзернейм перед созданием сделки</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© Гарант сделок</p>
+        <p>77</p>
+    </footer>
+
+    <script>
+        // Простой переключатель языков (заглушка — показывает как это может работать)
+        document.getElementById('lang-ru').addEventListener('click', function () {
+            this.classList.add('active');
+            document.getElementById('lang-en').classList.remove('active');
+            // В реале — здесь можно подгружать текст на другом языке
+        });
+        document.getElementById('lang-en').addEventListener('click', function () {
+            this.classList.add('active');
+            document.getElementById('lang-ru').classList.remove('active');
+            alert('EN версия не реализована в этой локальной копии.');
+        });
+    </script>
+</body>
+
+</html>
